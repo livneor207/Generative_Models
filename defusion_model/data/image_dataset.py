@@ -6,8 +6,8 @@ from PIL import Image
 from torch.utils.data import Dataset
 from torchvision.transforms import v2
 
-from data.dogs_vs_cats import list_train_images, prepare_dogs_vs_cats
-from data.oxford_pets import list_pet_images, parse_breed, parse_species, prepare_oxford_pets
+from defusion_model.data.dogs_vs_cats import list_train_images, prepare_dogs_vs_cats
+from defusion_model.data.oxford_pets import list_pet_images, parse_breed, parse_species, prepare_oxford_pets
 
 
 CLASS_TO_INDEX = {'cat': 0, 'dog': 1}

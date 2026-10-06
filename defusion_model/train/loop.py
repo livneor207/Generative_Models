@@ -1,8 +1,8 @@
 import logging
 from pathlib import Path
 
-from diffusion.device import load_model
-from train.helpers import (
+from defusion_model.diffusion.device import load_model
+from defusion_model.train.helpers import (
     ExponentialMovingAverage,
     add_epoch_results,
     check_if_model_improved,

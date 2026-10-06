@@ -49,7 +49,7 @@ from transformers import AutoTokenizer, PretrainedConfig
 # Works both when run as a script (sys.path[0] is this folder) and when
 # imported as a package by the poetry console script.
 try:
-    from sdxl_lora.dataset import ImageCaptionDataset, collate_fn
+    from defusion_model.sdxl_lora.dataset import ImageCaptionDataset, collate_fn
 except ImportError:  # pragma: no cover - direct script invocation
     from dataset import ImageCaptionDataset, collate_fn
 

@@ -52,7 +52,7 @@ Downloads Oxford-IIIT Pet (~792 MB, **no credentials required**), extracts it,
 drops unreadable/too-small files, and writes one caption per image. Idempotent —
 re-running skips work already done.
 
-Result: `data/lora_pets37_styled/` — 6,603 images across 37 breeds (12 cat, 25 dog),
+Result: `data` — 6,603 images across 37 breeds (12 cat, 25 dog),
 each with a `.txt` caption.
 
 ### 2. Install dependencies
@@ -148,7 +148,7 @@ poetry run infer --lora-path runs/v1/best --compare-base --prompt "<all 37 promp
 poetry run build-sheets --compare-dir outputs/compare --out-dir outputs/sheets
 ```
 
-Pre-built results live in [`artifacts/comparisons/`](artifacts/comparisons/):
+Pre-built results live in [`artifacts`](defusion_model/artifacts/comparisons/):
 
 | file | contents |
 |---|---|
@@ -238,7 +238,7 @@ sdxl_lora/
 artifacts/comparisons/     pre-built result images
 ```
 
-A separate from-scratch DDPM (`train.py`, `sample.py`, `diffusion/`) also lives
+A separate from-scratch DDPM (`train.py`, `sample.py`, `diffusion`) also lives
 here from earlier experiments — it is unrelated to the LoRA pipeline.
 
 ## Implementation notes

@@ -23,7 +23,7 @@ import numpy as np
 import torch
 from torch.utils.data import DataLoader
 
-from data.image_dataset import create_dataset
+from defusion_model.data import create_dataset
 from diffusion.device import load_compatible_weights, resolve_device
 from diffusion.freeze import freeze_unet_layers
 from diffusion.schedule import GaussianDiffusion

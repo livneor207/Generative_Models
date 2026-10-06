@@ -2,7 +2,7 @@ import torch
 from torch import nn
 from torch.nn import functional as F
 
-from diffusion.blocks import (
+from defusion_model.diffusion.blocks import (
     AttentionBlock,
     Downsample,
     ResidualBlock,

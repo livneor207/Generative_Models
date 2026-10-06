@@ -11,7 +11,7 @@ trained -- roughly 0.5% of the UNet -- so runs fit on a single consumer GPU.
 | `dataset.py` | image + caption dataset, with SDXL size/crop micro-conditioning |
 | `train_lora.py` | training loop: accelerate, mixed precision, PEFT LoRA, TensorBoard |
 | `inference.py` | base model + trained LoRA, with an optional base-model comparison |
-| `requirements.txt` | dependencies |
+| `../requirements.txt` | dependencies |
 
 ## Data layout
 

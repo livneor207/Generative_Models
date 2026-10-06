@@ -4,7 +4,7 @@ import torch
 from torch import nn
 from torch.nn import functional as F
 
-from diffusion.unet import NULL_CLASS
+from defusion_model.diffusion.unet import NULL_CLASS
 
 
 def linear_beta_schedule(timesteps, beta_start=1e-4, beta_end=0.02):
